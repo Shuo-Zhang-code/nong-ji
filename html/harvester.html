@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>双排智能玉米大豆收获机详细展示 - 详细展示</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/harvester.css" />
+  <script src="../js/harvester.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>双排智能玉米大豆收获机详细展示</h1>
+    <button class="back-button" onclick="window.history.back()">返回</button>
+  </header>
+
+  <main class="tractor-container">
+    <!-- 左侧图片展示区域 -->
+    <div class="model-viewer-container">
+      <div class="model-viewer" id="model-container">
+        <img id="part-image" src="" alt="部件图片" style="width:100%; height:100%; object-fit:contain; display:none; border-radius:8px;" />
+      </div>
+    </div>
+
+    <!-- 右侧部件及信息 -->
+    <div class="parts-panel-wrapper">
+      
+      <div class="parts-panel">
+        <h2>关键部件</h2>
+        <ul class="parts-list">
+          <li data-part="engine">大豆切割-传输装置</li>
+          <li data-part="tire">大豆处理装置</li>
+          <li data-part="steering">玉米切割-传输装置</li>
+          <li data-part="transmission">玉米处理装置</li>
+        </ul>
+
+    <div class="part-info" id="part-info">
+        <h3 id="part-name">选择部件查看详情</h3>
+        <p id="part-description">点击左侧列表中的部件名称查看详细信息</p>
+    </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
